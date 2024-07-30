@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Inputs</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Responsive Registration Form</h1>
+    </div>
+
+    <div class="form-container">
+      <h2>Registration Form</h2>
+
+      <form action="">
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Enter full name"
+            required
+          />
+          <br />
+        </div>
+
+        <div class="input-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Enter address" />
+          <br />
+        </div>
+
+        <div class="input-group">
+          <label for="zip">Zip Code</label>
+          <input
+            type="text"
+            id="zipcode"
+            placeholder="Enter zip code"
+            required
+          />
+        </div>
+        <br />
+
+        <div class="input-group">
+          <label for="country" id="countryLabel">Country</label>
+          <select id="country">
+            <option value="">Select Country</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" placeholder="Enter email address" /> <br />
+        </div>
+
+        <div class="input-group">
+          <label for="mobile">Mobile number</label>
+          <input type="tel" id="mobile" placeholder="Enter mobile number" />
+        </div>
+
+        <div class="input-group">
+          <label for="dob">Birth Date</label>
+          <input type="date" name="" id="" /> <br />
+        </div>
+
+        <div class="input-group">
+          <legend>Gender</legend>
+          <br />
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gender" value="male" required />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="female" required />
+              Female
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="prefer-not-to-say"
+                required
+              />
+              Prefer not to say
+            </label>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="input-group">
+          <label for="password">Password (6-8 characters)</label>
+          <input
+            type="password"
+            id="password"
+            maxlength="8"
+            minlength="6"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="verifyPassword">Verify Password</label>
+          <input type="password" id="verifyPassword" required />
+        </div>
+
+        <div class="buttons">
+          <input type="submit" id="submit"></button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
